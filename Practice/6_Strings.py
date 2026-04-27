@@ -1,4 +1,7 @@
 # Strings are immutable
+# indexing is allowed
+# slicing is  allowed
+# Modifying is not allowed 
 
 # string concatenation
 
