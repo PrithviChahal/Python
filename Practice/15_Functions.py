@@ -96,3 +96,46 @@ local()
 change()
 
 print(a)
+
+
+# Decorator function
+
+def deco(fn):
+
+    def wrapper(a,b):
+        print("***********")
+        fn(a,b)
+        print("***********")
+
+    return wrapper
+
+@deco
+def multiplication(a,b):
+    print(f"Multiplication of {a} and {b} is {a*b}")
+
+multiplication(5,5)    
+
+
+
+#  closure 
+
+
+def abc(num):
+    return lambda a:a*num
+
+
+a = abc(10)
+a(10)
+
+
+#  prime number 
+
+def prime():
+    n = int(input(f" Enter any number : "))
+
+    if n%n == 0 and n%1==0:
+        print(f" {n} is prime number")
+    else:
+        print(f" {n} is not a prime number ")   
+
+

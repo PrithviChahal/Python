@@ -23,3 +23,11 @@ student["city"] = "Faridabad"
 print(student)
 
 print(student.keys())
+
+print(student.items())
+
+a = ["a","b","c"]
+
+b = dict.fromkeys(a,1)
+
+print(b)
